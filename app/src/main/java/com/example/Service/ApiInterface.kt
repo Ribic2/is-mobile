@@ -8,9 +8,9 @@ import retrofit2.http.Header
 
 interface ApiInterface {
 
-    @GET("tickets")
+    @GET("TicketApi/tickets")
     fun getTickets(@Header("ApiKey") apiKey: String): Call<List<Ticket>>
 
-    @GET("projects")
+    @GET("ProjectApi/Projects")
     fun getProjects(): List<Project>
 }
